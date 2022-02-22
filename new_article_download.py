@@ -13,6 +13,6 @@ print(url)
 r = requests.get(url, stream=True)
 
 
-# filename = url.split('/')[-1]
-# with open('python_new6.pdf', 'wb') as pdf:
-#     pdf.write(r.content)
+filename = url.split('/')[-1]
+with open('python_new6.pdf', 'wb') as pdf:
+    pdf.write(r.content)
